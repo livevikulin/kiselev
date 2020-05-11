@@ -1,0 +1,118 @@
+
+.features
+  padding-top: 100px
+
+.features__wrap
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+  -webkit-box-pack: justify
+  -ms-flex-pack: justify
+  justify-content: space-between
+
+.features-block
+  background-color: #f4f4f4
+  -ms-flex-preferred-size: 31.5%
+  flex-basis: 31.5%
+  border-radius: 15px
+  padding: 60px 30px 55px 40px
+  margin-bottom: 40px
+  -webkit-transition: color .2s, background-color .3s
+  transition: color 0.2s, background-color 0.3s
+
+  &:hover
+    background-color: #c42185
+    color: #fff
+
+    .features-block__img img
+      -webkit-filter: brightness(10)
+      filter: brightness(10)
+
+.features-block__img
+  width: 50px
+  margin-bottom: 40px
+
+  img
+    -webkit-transition: -webkit-filter .1s
+    transition: -webkit-filter .1s
+    transition: filter .1s
+    transition: filter 0.1s, -webkit-filter 0.1s
+
+.features-block__title
+  font-size: 35px
+  font-weight: 500
+  margin-bottom: 10px
+
+.features-block__price
+  font-size: 23px
+  font-weight: 400
+  display: inline-block
+  margin-bottom: 15px
+
+.features-block__descr
+  font-size: 18px
+  line-height: 30px
+  max-width: 355px
+  font-weight: 300
+
+.features__btn
+  margin-top: 10px
+
+@media screen and (max-width: 1201px)
+  .features-block
+    -ms-flex-preferred-size: 48%
+    flex-basis: 48%
+
+@media screen and (max-width: 993px)
+  .features
+    text-align: center
+
+  .features__title
+    margin-bottom: 60px
+
+  .features-block
+    text-align: left
+    -ms-flex-preferred-size: 70%
+    flex-basis: 70%
+    margin-left: auto
+    margin-right: auto
+
+@media screen and (max-width: 769px)
+  .features-block
+    -ms-flex-preferred-size: 80%
+    flex-basis: 80%
+
+@media screen and (max-width: 577px)
+  .features
+    padding-top: 60px
+
+  .features__title
+    margin-bottom: 35px
+
+  .features-block
+    -ms-flex-preferred-size: 100%
+    flex-basis: 100%
+    margin-bottom: 25px
+    padding: 40px
+    padding-left: 24px
+
+    &:nth-last-child(1), &:nth-last-child(2), &:nth-last-child(3)
+      display: none
+
+  .features-block__img
+    width: 44px
+    margin-bottom: 20px
+
+  .features-block__title
+    font-size: 24px
+    margin-bottom: 7px
+
+  .features-block__price
+    font-size: 18px
+    margin-bottom: 12px
+
+  .features-block__descr
+    font-size: 14px
+    line-height: 20px

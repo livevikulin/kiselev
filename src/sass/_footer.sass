@@ -1,0 +1,187 @@
+
+.footer
+  background-color: #232323
+  color: #fff
+  padding: 75px 0
+
+.footer-wrap
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-pack: justify
+  -ms-flex-pack: justify
+  justify-content: space-between
+  margin-bottom: 30px
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+
+.footer-wrap__links
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  max-width: 1140px
+  width: 100%
+  -webkit-box-pack: justify
+  -ms-flex-pack: justify
+  justify-content: space-between
+  margin-right: 90px
+  margin-bottom: 40px
+
+  a
+    font-size: 27px
+    color: #fff
+    font-weight: 300
+
+.footer-wrap__socials
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  max-width: 132px
+  width: 100%
+  -webkit-box-pack: justify
+  -ms-flex-pack: justify
+  justify-content: space-between
+
+  a
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    width: 37px
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+    height: 37px
+    border: 1px solid #fff
+    border-radius: 50%
+    -webkit-transition: background-color .3s
+    transition: background-color 0.3s
+
+
+    img
+      -webkit-transition: -webkit-filter .3s
+      transition: -webkit-filter .3s
+      transition: filter .3s
+      transition: filter 0.3s, -webkit-filter 0.3s
+      &:nth-child(1)
+        display: block
+      &:nth-child(2)
+        display: none
+    
+
+
+    &:nth-child(1) img
+      width: 9px
+      height: 16px
+
+    &:nth-child(2) img
+      width: 18px
+      height: 10px
+
+    &:nth-child(3) img
+      width: 16px
+      height: 16px
+
+    &:hover
+      background-color: #fff
+
+      img
+        &:nth-child(1)
+          display: none
+
+        &.img-black
+          // height: max-content
+          display: block
+    
+
+.footer__privacy
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-pack: justify
+  -ms-flex-pack: justify
+  justify-content: space-between
+
+  i
+    font-style: normal
+    font-size: 18px
+    font-weight: 300
+    color: #656565
+
+  a
+    font-size: 18px
+    font-weight: 300
+    color: #656565
+    text-decoration: underline
+
+@media screen and (max-width: 1400px)
+  .footer-wrap__links
+    max-width: none
+    margin-right: 0
+
+@media screen and (max-width: 1201px)
+  .footer-wrap
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+
+  .footer-wrap__links
+    text-align: center
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    margin-bottom: 25px
+
+    a
+      -ms-flex-preferred-size: 100%
+      flex-basis: 100%
+      display: inline-block
+      margin-bottom: 15px
+
+@media screen and (max-width: 993px)
+  .footer__privacy
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    text-align: center
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+
+    i
+      display: block
+      margin-bottom: 15px
+      -ms-flex-preferred-size: 100%
+      flex-basis: 100%
+      max-width: 400px
+
+    a
+      -ms-flex-preferred-size: 100%
+      flex-basis: 100%
+
+@media screen and (max-width: 577px)
+  .footer
+    padding-top: 54px
+    padding-bottom: 30px
+
+  .footer-wrap
+    margin-bottom: 30px
+
+  .footer-wrap__links
+    margin-bottom: 20px
+
+    a
+      font-size: 20px
+
+  .footer__privacy
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+
+    a, i
+      font-size: 12px
+      max-width: 200px

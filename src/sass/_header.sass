@@ -1,0 +1,365 @@
+
+.header
+  padding: 25px 0
+  z-index: 2
+  position: fixed
+  width: 100%
+  background-color: #fff
+
+.header-wrap
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-pack: justify
+  -ms-flex-pack: justify
+  justify-content: space-between
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+
+.header__text
+  font-size: 17px
+  margin-right: 40px
+  color: #000
+
+.header__text_mail
+  font-size: 20px
+
+.header__logo a
+  width: 220px
+  height: 56px
+  background: url(../img/face/logo.svg) no-repeat
+  display: block
+
+.header__links
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+
+.header__menu-btn
+  background-color: #c42185
+  width: 32px
+  height: 32px
+  display: block
+  border-radius: 50%
+  position: relative
+  cursor: pointer
+
+  span
+    display: block
+    content: ''
+    width: 12px
+    height: 2px
+    background-color: #fff
+    position: absolute
+    left: 50%
+    top: 50%
+    -webkit-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)
+
+    &::before, &::after
+      display: block
+      content: ''
+      width: 12px
+      height: 2px
+      background-color: #fff
+      position: absolute
+      left: 50%
+      top: 50%
+      -webkit-transform: translate(-50%, -50%)
+      transform: translate(-50%, -50%)
+
+    &:before
+      margin-top: -4px
+
+    &:after
+      margin-top: 4px
+
+.header__menu-btn_active
+  background-color: #fff
+
+  span
+    background-color: transparent
+
+    &::before
+      width: 14px
+      -webkit-transform: rotate(45deg)
+      transform: rotate(45deg)
+      background-color: #c42185
+      margin-left: -7px
+      margin-top: -1px
+
+    &::after
+      width: 14px
+      margin-left: -7px
+      -webkit-transform: rotate(135deg)
+      transform: rotate(135deg)
+      margin-top: -1px
+      background-color: #c42185
+
+.menu
+  display: none
+
+.is-header_active
+  .header__logo a
+    background: url(../img/face/logo_white.svg) no-repeat
+
+  .header__text
+    color: #fff
+
+.is-header_fixed
+  -webkit-box-shadow: 0 7px 34px 4px rgba(0, 0, 0, 0.05)
+  box-shadow: 0 7px 34px 4px rgba(0, 0, 0, 0.05)
+  background-color: #fff
+
+.is-header_active
+  background-color: #c42185
+  -webkit-box-shadow: none
+  box-shadow: none
+
+.is-menu_active .menu
+  display: block
+
+.menu
+  background-color: #c42185
+  color: #fff
+  width: 100vw
+  height: 100vh
+  position: fixed
+  padding-top: 190px
+  z-index: 1
+  overflow-y: scroll
+
+.menu-wrap
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+
+.menu-list
+  max-width: 580px
+  width: 100%
+  list-style: none
+  padding: 0
+  margin: 0
+  line-height: 550%
+
+  a
+    text-decoration: none
+    font-size: 70px
+    color: #fff
+    position: relative
+    padding-bottom: 10px
+    font-weight: 500
+    -webkit-transition: all 0.6s
+    transition: all 0.6s
+
+    &:before
+      content: ""
+      width: 0
+      height: .1em
+      position: absolute
+      bottom: 0
+      right: 0
+      background: #fff
+      -webkit-transition: all 0.3s
+      transition: all 0.3s
+
+    &:hover:before
+      width: 100%
+      left: 0
+      background: #fff
+
+.menu-form
+  padding-top: 5px
+  max-width: 617px
+  width: 100%
+  text-align: center
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-orient: vertical
+  -webkit-box-direction: normal
+  -ms-flex-direction: column
+  flex-direction: column
+  -webkit-box-pack: justify
+  -ms-flex-pack: justify
+  justify-content: space-between
+  padding-bottom: 3.9vh
+
+.menu-form__title
+  font-size: 70px
+  font-weight: 500
+  margin-bottom: 50px
+  text-align: left
+
+.menu-form__input
+  margin-bottom: 30px
+
+.menu-form__btn
+  display: block
+
+.menu-form__policy
+  width: 100%
+
+.menu-form__links
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-pack: justify
+  -ms-flex-pack: justify
+  justify-content: space-between
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+
+.menu-form__socials
+  width: 132px
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-pack: justify
+  -ms-flex-pack: justify
+  justify-content: space-between
+
+.menu-form__download
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  color: #fff
+
+  img
+    margin-right: 8px
+
+.menu__text_phone, .menu__text_mail
+  display: none
+
+@media screen and (max-width: 993px)
+  .header__text_mail
+    display: none
+
+  .header__text
+    margin-right: 20px
+
+@media screen and (max-width: 577px)
+  .header__text_phone
+    display: none
+
+  .header__logo a
+    width: 160px
+    height: 36px
+
+@media screen and (max-width: 1201px)
+  .menu-list a
+    font-size: 60px
+
+  .menu-form
+    padding-top: 9px
+
+  .menu-form__title
+    font-size: 60px
+
+@media screen and (max-width: 993px)
+  .menu
+    padding-top: 140px
+
+  .menu-list
+    line-height: 490%
+
+    a
+      font-size: 48px
+
+  .menu-form
+    padding-top: 15px
+
+  .menu-form__title
+    font-size: 48px
+
+  .menu-form__policy
+    max-width: 310px
+    font-size: 13px
+
+  .menu-form__download
+    font-size: 14px
+
+@media screen and (max-width: 769px)
+  .menu-list
+    line-height: 440%
+
+    a
+      font-size: 48px
+
+  .menu-form
+    padding-top: 30px
+
+  .menu-form__wrap
+    display: none
+
+  .menu-form__download
+    -webkit-box-ordinal-group: 2
+    -ms-flex-order: 1
+    order: 1
+    margin-bottom: 10px
+    font-size: 16px
+
+    img
+      margin-top: -2px
+
+  .menu-form__links
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+    -webkit-box-align: start
+    -ms-flex-align: start
+    align-items: start
+
+  .menu-form__socials
+    -webkit-box-ordinal-group: 4
+    -ms-flex-order: 3
+    order: 3
+
+  .menu-wrap
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+
+  .menu__text_mail
+    -webkit-box-ordinal-group: 3
+    -ms-flex-order: 2
+    order: 2
+    color: #fff
+    display: block
+    font-size: 20px
+    margin-bottom: 15px
+
+@media screen and (max-width: 577px)
+  .menu
+    padding-top: 90px
+
+  .menu-list
+    line-height: 350%
+
+    a
+      font-size: 28px
+
+      &:hover
+        border-bottom: 2px solid #fff
+
+  .menu__text_phone
+    font-size: 16px
+    -webkit-box-ordinal-group: 3
+    -ms-flex-order: 2
+    order: 2
+    margin-bottom: 5px
+    display: block
+    color: #fff
+
+  .menu-form__download
+    font-size: 12px

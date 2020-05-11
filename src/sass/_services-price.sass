@@ -1,0 +1,125 @@
+.price 
+  padding-top: 100px
+  &-wrap 
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &-item 
+    width: 30%
+    background-color: #f4f4f4
+    transition: 0.5s
+    border-radius: 15px
+    padding: 50px 40px
+    position: relative
+    padding-bottom: 90px
+    &__title
+      font-size: 35px
+      font-weight: 500
+      font-family: Gilroy
+      color: #000000
+      transition: 0.5s
+      margin-bottom: 15px
+    &__price 
+      color: $accent
+      font-size: 23px
+      font-weight: normal
+      margin-bottom: 40px
+      transition: 0.5s
+    &__ul 
+      padding-left: 15px
+    &__li 
+      color: $accent
+      transition: 0.5s
+      margin-bottom: 5px
+
+      span 
+        color: #000000
+        display: block
+        margin-left: -5px
+        transition: 0.5s
+        font-size: 18px
+        font-weight: 300
+        line-height: 1.78
+    &__more 
+      position: absolute
+      bottom: 50px
+      left: 40px
+      transition: 0.5s
+      color: $accent !important
+      svg, path
+        margin-left: 5px
+        width: 14px
+        height: 10px
+        fill: $accent !important
+        transition: 0.5s
+      img 
+        // filter: brightness(1
+        fill: red
+        width: 14px
+
+
+
+@media ( min-width: 992px )
+  .price 
+    &-item:hover 
+      cursor: pointer
+      background-color: $accent
+      transition: 0.5s
+      .price-item
+        &__title,
+        &__price,
+        &__li, 
+        &__li span, 
+        &__more, 
+        &__more svg, 
+        &__more path
+          transition: 0.5s
+          color: #ffffff !important
+          fill: #ffffff !important
+          
+
+      
+@media  ( max-width: 1200px )
+  .price 
+    &-wrap 
+      justify-content: center
+    &-item 
+      width: 75%
+      margin-bottom: 40px
+      &:last-of-type
+        margin-bottom: 0
+  
+@media  ( max-width: 992px )
+  .price 
+    &-wrap 
+      justify-content: center
+    &-item 
+      width: 80%
+      margin-bottom: 40px
+
+@media  ( max-width: 767px )
+  .price  
+    padding-top: 60px
+    &-wrap 
+      justify-content: center
+    &-item 
+      width: 100%
+      margin-bottom: 40px
+      &__title 
+        font-size: 30px
+
+@media  ( max-width: 425px )
+  .price 
+    &-wrap 
+      justify-content: center
+    &-item 
+      width: 100%
+      margin-bottom: 40px
+      padding: 40px 30px
+      padding-bottom: 80px
+      &__title 
+        font-size: 24px
+      &__more 
+        left: 30px
+        font-size: 16px !important
+

@@ -1,0 +1,170 @@
+
+.face
+  padding-top: 175px
+  position: relative
+
+.face-text
+  margin-bottom: 35px
+  max-width: 600px
+  width: 100%
+
+.face-text__title
+  font-weight: 500
+  font-size: 70px
+  max-width: 400px
+  margin-top: 0
+  margin-bottom: 20px
+
+.face-text__descr
+  max-width: 510px
+  font-size: 22px
+  line-height: 32px
+  font-weight: 300
+  margin-bottom: 40px
+
+.face-text__btn
+  display: none
+
+.face-wrap
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-pack: justify
+  -ms-flex-pack: justify
+  justify-content: space-between
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+
+.face-img
+  position: relative
+
+.face-img__play
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  font-size: 18px
+  font-weight: 400
+  -webkit-transform: rotate(-45deg)
+  transform: rotate(-45deg)
+  position: absolute
+  top: 25%
+  left: 60.5%
+  color: #000
+  -webkit-transition: color .3s
+  transition: color 0.3s
+
+  &:hover
+    color: #c42185
+
+  img
+    margin-right: 15px
+
+@media screen and (max-width: 1450px)
+  .face-img__play
+    font-size: 1.2vw
+
+    img
+      width: 4vw
+
+@media screen and (max-width: 1201px)
+  .face-text
+    max-width: 480px
+
+  .face-text__title
+    font-size: 60px
+
+  .face-text__descr
+    font-size: 18px
+    line-height: 25px
+    max-width: 430px
+
+  .face-img__play
+    font-size: 16px
+    left: 58.5%
+    top: 21.5%
+
+    img
+      width: 45px
+
+@media screen and (max-width: 993px)
+  .face
+    text-align: center
+
+  .face-wrap
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+
+  .face-text
+    margin-bottom: 0
+
+  .face-text__title, .face-text__descr
+    margin-left: auto
+    margin-right: auto
+
+  .face-text__btn_hidden
+    display: none
+
+  .face-text__btn
+    display: inline-block
+
+  .face-img
+    max-width: 460px
+    margin-bottom: 40px
+
+  .face-img__play
+    top: 22%
+    left: 59%
+
+@media screen and (max-width: 769px)
+  .face
+    padding-top: 160px
+
+  .face-text
+    margin-bottom: 0
+
+  .face-img
+    max-width: 400px
+
+  .face-img__play
+    top: 20%
+    left: 58%
+
+@media screen and (max-width: 577px)
+  .face
+    padding-top: 100px
+
+  .face-text
+    margin-bottom: 0
+
+  .face-text__title
+    font-size: 36px
+
+  .face-text__descr
+    font-size: 14px
+    line-height: 18px
+    max-width: 270px
+    margin-bottom: 20px
+
+  .face-img
+    margin-bottom: 20px
+
+  .face-img__play
+    top: 21%
+    left: 58%
+
+    img
+      margin-right: 7px
+
+@media screen and (max-width: 445px)
+  .face-img__play
+    font-size: 4.2vw
+    top: 20%
+
+    img
+      width: 10vw

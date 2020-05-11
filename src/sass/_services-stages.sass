@@ -1,0 +1,137 @@
+.stages
+  padding-top: 100px
+  &-title 
+    margin-bottom: 40px !important
+  &-wrap 
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &-item 
+    flex-basis: 21%
+    margin-top: 50px
+  
+    &__num 
+      color: $accent
+      font-size: 25px
+      font-weight: 500
+      width: 60px
+      height: 60px
+      background-color: #f5f5f5
+      border-radius: 50px
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-bottom: 25px
+      font-family: 'Gilroy'
+    &__title 
+      font-size: 25px
+      font-weight: 500
+      font-family: Gilroy
+      margin-bottom: 15px
+      font-family: 'Gilroy'
+
+    &__text
+      font-size: 16px
+      font-weight: 300
+      line-height: 24px 
+      font-family: 'Gilroy'
+
+  &-btn 
+    display: none 
+    cursor: pointer
+    // background-color: #
+    background: transparent
+    margin-top: 30px
+    box-shadow: 0 0 0 0 rgba(0,123,255,0)!important
+
+@media ( max-width: 1200px )
+  .stages
+    padding-top: 100px
+    &-wrap 
+      display: flex
+      justify-content: flex-start
+      flex-wrap: wrap
+      margin-bottom: 60px
+    &-item 
+      flex-basis: 30%
+      margin-right: 30px
+ 
+      &:nth-child(7), 
+      &:nth-child(8) 
+        display: none
+    &-btn 
+      display: inline-block 
+        
+
+@media ( max-width: 992px )
+  .stages
+    padding-top: 100px
+    &-title 
+      margin-bottom: 40px
+      text-align: center
+    &-wrap 
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      margin-bottom: 0
+    &-item 
+      flex-basis: 48%
+      margin-right: 0
+      &:nth-child(7), 
+      &:nth-child(8) 
+        display: block
+    &-btn 
+      display: none 
+
+@media ( max-width: 576px )
+  .stages
+    padding-top: 20px  
+    &-title 
+      margin-bottom: 0 !important
+      text-align: center
+    &-wrap 
+      display: flex
+      justify-content: center
+      flex-wrap: wrap
+      margin-bottom: 30px
+    &-item 
+      flex-basis: 90%
+      margin-right: 0
+      display: flex
+      align-items: flex-start
+      flex-wrap: wrap
+      &__num 
+        margin-bottom: 0px
+      &__title 
+        margin-left: 15px
+        margin-bottom: 0px
+        margin-top: 10px
+        display: block
+        // font-size: 20px
+      &__text
+        margin-left: 75px
+      &:nth-child(5), 
+      &:nth-child(6), 
+      &:nth-child(7), 
+      &:nth-child(8) 
+        display: none
+    &-btn 
+      display: inline-block 
+   
+
+@media ( max-width: 425px )
+  .stages
+    &-title 
+      margin-bottom: 40px
+      text-align: center
+    &-wrap 
+      display: flex
+      justify-content: center
+      flex-wrap: wrap
+    &-item 
+      flex-basis: 100%
+      &__title 
+        font-size: 22px
+        margin-top: 10px
+        margin-bottom: 5px
+        width: calc( 100% - 75px )

@@ -1,0 +1,250 @@
+.cases
+  padding-top: 100px
+
+.cases-wrap
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+
+.cases-block
+  background-color: #f5f5f5
+  border-radius: 15px
+  max-width: 692px
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-transition: background-color .2s
+  transition: background-color .2s
+  cursor: pointer
+  margin-right: 32px
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  margin-bottom: 32px
+
+  &:nth-child(2n+2)
+    margin-right: 0
+
+
+
+.cases-block__tags
+  margin-bottom: 24px
+
+.cases-block__title
+  font-size: 25px
+  font-weight: 500
+  margin-bottom: 12px
+  max-width: 304px
+  -webkit-transition: color .2s
+  transition: color 0.2s
+
+.cases-block__descr
+  font-size: 16px
+  font-weight: 300
+  max-width: 260px
+  line-height: 145%
+  min-height: 110px
+  -webkit-transition: color .2s
+  transition: color 0.2s
+
+.cases-block__more
+  font-size: 18px
+  -webkit-transition: color .2s
+  transition: color .2s
+  color: #000
+
+  img
+    margin-left: 7px
+    -webkit-transition: -webkit-filter .1s
+    transition: -webkit-filter .1s
+    transition: .1s
+    transition: 0.1s
+    display: inline-block 
+    &.img-white
+      display: none 
+      
+
+.cases-block:hover
+  background-color: #c42185
+  color: #fff
+
+  .cases-block__tag
+    background-color: #fff
+    color: #c42185
+
+  .cases-block__more
+    color: #fff
+
+    img
+      display: none
+      &.img-white
+        display: inline-block
+        margin-bottom: -2px
+    
+      // -webkit-filter: invert(100%)
+      // filter: invert(100%)
+
+.cases-text
+  padding: 77px 27px 35px 23px
+  min-width: 352px
+  text-align: left
+
+.cases-img
+  height: 330px
+  max-height: 330px
+  -ms-flex-preferred-size: 340px
+  flex-basis: 340px
+  width: 340px
+
+  img
+    border-radius: 15px 0 0 15px
+    max-height: 330px
+    height: 100%
+
+
+@media ( max-width: 768px  )
+  .cases-img 
+    height: 290px
+    max-height: 290px
+    img 
+      height: 290px
+      max-height: 290px
+
+@media ( max-width: 426px  )
+  .cases-img 
+    height: 190px
+    max-height: 190px
+    img 
+      max-height: 190px
+      height: 190px
+
+.cases-container
+  z-index: 0
+
+.cases__btn
+  margin-top: 18px
+
+@media screen and (max-width: 1450px)
+  .cases
+    text-align: center
+
+  .cases-wrap
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+
+  .cases-block
+    margin-left: auto
+    margin-right: auto !important
+
+@media screen and (max-width: 1201px)
+  .cases__title
+    font-size: 60px
+    margin-bottom: 55px
+
+@media screen and (max-width: 993px)
+  .cases__title
+    margin-bottom: 50px
+
+@media screen and (max-width: 769px)
+  .cases__title
+    margin-bottom: 40px
+
+  .cases-block
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+    width: 100%
+    margin-right: 20px !important
+    height: 524px
+
+  .cases-block__tags
+    margin-bottom: 15px
+
+  .cases-block__title
+    font-size: 20px
+    margin-bottom: 9px
+
+  .cases-block__descr
+    font-size: 14px
+    max-width: 225px
+    min-height: 100px
+
+  .cases-block__tag
+    font-size: 12px
+
+  .cases-block__more
+    font-size: 14px
+
+    img
+      width: 12px
+
+
+  .cases-text
+    padding-top: 22px
+    min-width: auto
+    padding-left: 20px
+    padding-right: 0
+    margin-right: auto
+    padding-bottom: 25px
+
+  .cases-img
+    width: auto
+
+    img
+      width: 100%
+      border-radius: 15px 15px 0 0
+
+  .cases-container
+    max-width: 425px
+    height: 580px
+
+  .swiper-pagination-bullet
+    width: 12px
+    height: 12px
+    opacity: 1
+    background-color: #e2e2e2
+
+  .swiper-pagination-bullet-active
+    background-color: #c42185 !important
+
+@media (max-width: 426px)
+  .cases-block
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    width: 100%
+    margin-right: 20px !important
+    height: 100%
+    max-height: 414px
+    margin-bottom: 0 !important
+
+  .cases-container
+    max-height: 454px
+
+  .cases__btn
+    margin-top: 20px
+
+  .cases-text
+    padding-bottom: 0
+
+  .swiper-pagination
+    /* position: relative;
+    bottom: 2px !important
+
+
+
+@media screen and (max-width: 577px)
+  .cases
+    padding-top: 60px
+
+  .cases__title
+    font-size: 36px
+    margin-bottom: 20px
+
+  .cases-block
+    margin-bottom: 25px

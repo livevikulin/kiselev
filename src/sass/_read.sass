@@ -1,0 +1,139 @@
+
+.read
+  padding-top: 100px
+
+.read-block
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  margin-bottom: 60px
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+
+.read-block__img
+  max-width: 700px
+  max-height: 435px
+  margin-right: 108px
+  overflow: hidden
+  border-radius: 15px
+
+  img
+    border-radius: 15px
+
+.read-block__date
+  font-size: 12px
+  font-weight: 500
+  color: #b6b6b6
+  margin-left: 5px
+
+.read-block__tags
+  margin-bottom: 30px
+
+.read-block__text
+  max-width: 510px
+
+.read-block__title
+  font-size: 40px
+  font-weight: 500
+  margin-bottom: 12px
+
+.read-block__descr
+  font-size: 18px
+  line-height: 26px
+  min-height: 160px
+  font-weight: 300
+
+.read-block__more
+  font-size: 18px
+  color: #000
+
+  img
+    margin-left: 5px
+    margin-bottom: -2px
+    display: inline-block
+    &.img-purpur 
+      display: none
+
+  &:hover
+    color: #c42185
+
+    img
+      margin-bottom: -2px
+      display: none
+      &.img-purpur 
+        display: inline-block
+
+@media screen and (max-width: 1350px)
+  .read-block__img
+    margin-right: 80px
+
+@media screen and (max-width: 1201px)
+  .read-block__title
+    font-size: 30px
+
+@media screen and (max-width: 993px)
+  .read
+    text-align: center
+
+  .read__title
+    margin-bottom: 60px
+
+  .read-block
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+    max-width: 550px
+    margin-left: auto
+    margin-right: auto
+    text-align: left
+
+  .read-block__img
+    margin-right: 0
+    margin-bottom: 40px
+
+@media screen and (max-width: 769px)
+  .read__title
+    margin-bottom: 50px
+
+  .read-block__descr
+    min-height: 150px
+
+@media screen and (max-width: 577px)
+  .read
+    padding-top: 50px
+
+  .read__title
+    margin-bottom: 30px
+
+  .read-block
+    margin-bottom: 40px
+
+  .read-block__img
+    margin-bottom: 22px
+
+  .read-block__tag
+    font-size: 12px
+    padding: 0 11px
+    padding-bottom: 2px
+
+  .read-block__date
+    font-size: 10px
+    margin-left: 2px
+
+  .read-block__tags
+    margin-bottom: 15px
+
+  .read-block__title
+    font-size: 24px
+    line-height: 30px
+    margin-bottom: 12px
+
+  .read-block__descr
+    font-size: 14px
+    line-height: 20px
+    min-height: 110px
+
+  .read-block__more
+    font-size: 14px
