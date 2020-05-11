@@ -1,0 +1,62 @@
+//стили для блока "Мы в цифрах"
+.info
+    padding-top: 100px
+    &__btn
+        display: none
+.info-boxes
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-bottom: -69px
+.info-box
+    flex-basis: 29%
+    margin: 0 0 69px
+    span 
+        display: inline-block
+        color: #c42185
+        font-family: Gilroy
+        font-size: 40px
+        font-weight: 500
+        margin-bottom: 24px
+    p
+        color: #000000
+        font-family: Gilroy
+        font-size: 16px
+        font-weight: 300
+        line-height: 24px
+
+//адаптив
+@media ( max-width: 992px )
+    .info
+        &-title 
+            margin-bottom: 45px
+            text-align: center
+    .info-box
+        flex-basis: 48%
+
+@media ( max-width: 576px )
+    .info
+        padding-top: 20px  
+        padding-bottom: 39px
+        &__btn
+            display: inline-block
+            text-align: center
+            margin-top: 39px
+    .info-boxes
+        justify-content: center
+        margin-bottom: -35px
+    .info-box
+        flex-basis: 90%
+        margin-bottom: 35px
+        &:nth-child(n+4)
+            display: none
+        span
+            font-size: 28px
+        p
+            font-size: 16px
+
+@media ( max-width: 425px )
+    .info-box
+        flex-basis: 100%
+
+        
