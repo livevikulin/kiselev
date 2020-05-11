@@ -1,0 +1,56 @@
+//стили для блока "Награды и сертификаты"
+.awards 
+    padding-top: 100px
+    &__btn
+        margin-top: 50px
+.awards-boxes
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-bottom: -39px
+.awards-box
+    flex-basis: 32%
+    border-radius: 15px
+    background-color: #f4f4f4
+    padding: 60px 90px 60px 40px
+    margin-bottom: 39px
+    img
+        width: 220px
+        margin-bottom: 35px
+    p
+        color: #000000
+        font-family: Gilroy
+        font-size: 25px
+        font-weight: 500
+        line-height: 32px
+
+//адаптив
+@media (max-width: 1200px)
+    .awards-box
+        flex-basis: 49%
+
+@media (max-width: 992px)
+    .awards
+        &-title
+            margin-bottom: 40px
+            text-align: center
+    .awards-box
+        flex-basis: 100%
+
+@media ( max-width: 576px )
+    .awards
+        padding-top: 60px
+        &__btn
+            margin-top: 40px
+    .awards-boxes
+        margin-bottom: -30px
+    .awards-box
+        padding: 44px 25px
+        margin-bottom: 30px
+        &:nth-child(n+4)
+            display: none
+        img
+            width: 160px
+            margin-bottom: 21px
+        p
+            font-size: 18px

@@ -1,7 +1,69 @@
+.team
+    padding-top: 100px
+    &__btn
+        display: none
+.team-boxes
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-bottom: -65px
+.team-box
+    flex-basis: 21%
+    margin-bottom: 65px
+    &__img
+        width: 305px
+        border-radius: 15px
+        overflow: hidden
+        img
+            max-width: 100%
+            object-fit: cover
+    span
+        display: inline-block
+        color: #000000
+        font-family: Gilroy
+        font-size: 25px
+        font-weight: 400
+        line-height: 40px
+    p
+        color: #a0a0a0
+        font-family: Gilroy
+        font-size: 16px
+        font-weight: 300
+        line-height: 22px
 .team-wrap
     padding-bottom: 39px
 
+//адаптив
+@media ( max-width: 992px )
+    .team
+        &-title
+            text-align: center
+            margin-bottom: 40px
+
+@media ( max-width: 768px )
+    .team
+        &__btn
+            display: block
+            margin-top: 40px
+            text-align: center
+    .team-boxes
+        margin-bottom: -30px
+    .team-box
+        margin-bottom: 30px
+        &:nth-child(n+5)
+            display: none
+        &__img
+            width: 130px
+        span
+            font-size: 12px
+            line-height: 17px
+        p
+            font-size: 10px
+            line-height: 14px
+
 @media ( max-width: 576px )
+    .team
+        padding-top: 60px
     .team-wrap
         margin-bottom: 0
         .hero-subtitle
