@@ -17,6 +17,7 @@
   "dependencies": {
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
-    "gulp-sass": "^4.1.0"
+    "gulp-sass": "^4.1.0",
+    "swiper": "^5.3.8"
   }
 }
