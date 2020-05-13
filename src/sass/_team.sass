@@ -2,6 +2,8 @@
     padding-top: 100px
     &__btn
         display: none
+.team-header
+    background-color: #f9f9f9
 .team-boxes
     display: flex
     justify-content: space-between
@@ -13,6 +15,7 @@
     &__img
         width: 305px
         border-radius: 15px
+        margin-bottom: 30px
         overflow: hidden
         img
             max-width: 100%
@@ -23,13 +26,14 @@
         font-family: Gilroy
         font-size: 25px
         font-weight: 400
-        line-height: 40px
+        line-height: 25px
+        margin-bottom: 12px
     p
         color: #a0a0a0
         font-family: Gilroy
         font-size: 16px
         font-weight: 300
-        line-height: 22px
+        line-height: 16px
 .team-wrap
     padding-bottom: 39px
     .hero-subtitle
@@ -75,3 +79,11 @@
             margin-bottom: 0
             img
                 width: 100%
+    .team-box
+        width: calc(50% - 15px)
+        flex-basis: auto
+        &__img
+            width: 100%
+            margin-bottom: 14px
+        span
+            margin-bottom: 8px
