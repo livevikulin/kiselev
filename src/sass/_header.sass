@@ -189,6 +189,70 @@
   justify-content: space-between
   padding-bottom: 3.9vh
 
+.menu-form
+  &__socials
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    max-width: 132px
+    width: 100%
+    -webkit-box-pack: justify
+    -ms-flex-pack: justify
+    justify-content: space-between
+
+    a
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+      width: 37px
+      -webkit-box-align: center
+      -ms-flex-align: center
+      align-items: center
+      -webkit-box-pack: center
+      -ms-flex-pack: center
+      justify-content: center
+      height: 37px
+      border: 1px solid #fff
+      border-radius: 50%
+      -webkit-transition: background-color .3s
+      transition: background-color 0.3s
+
+
+      img
+        -webkit-transition: -webkit-filter .3s
+        transition: -webkit-filter .3s
+        transition: filter .3s
+        transition: filter 0.3s, -webkit-filter 0.3s
+        &:nth-child(1)
+          display: block
+        &:nth-child(2)
+          display: none
+      
+
+
+      &:nth-child(1) img
+        width: 9px
+        height: 16px
+
+      &:nth-child(2) img
+        width: 18px
+        height: 10px
+
+      &:nth-child(3) img
+        width: 16px
+        height: 16px
+
+      &:hover
+        background-color: #fff
+
+        img
+          &:nth-child(1)
+            display: none
+
+          &.img-black
+            // height: max-content
+            display: block
+
 .menu-form__title
   font-size: 70px
   font-weight: 500

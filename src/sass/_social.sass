@@ -29,31 +29,17 @@
     .social-box
         width: 290px
 
-@media screen and (max-width: 768px) 
-    .social-boxes
-        flex-direction: column
-
 @media ( max-width: 768px )
     .social
-        padding: 60px 0 0
+        padding: 60px 0 75px
         .cases-pagination
-            bottom: 100px
+            position: relative
+            span
+                margin: 0 3px
+    .social-boxes
+        flex-direction: inherit
+        flex-wrap: inherit
     .social-box
         width: 100%
         height: auto
         margin-right: 0
-
-@media ( max-width: 426px )
-    .social
-        padding: 60px 0 75px
-
-@media ( max-width: 380px )
-    .social
-        padding: 60px 0 0
-        .cases-pagination
-            bottom: 40px !important
-
-@media ( max-width: 340px )
-    .social
-        .cases-pagination
-            bottom: 100px !important
